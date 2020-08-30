@@ -40,9 +40,31 @@
               </p>
             </a>
           </li>
+           <li class="nav-item">
+              <a href="{{ route('products.index') }}" class="nav-link">
+              <i class="nav-icon fas fa-list"></i>
+              <p>
+                Products
+              </p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
   </aside>
+
+@push('scripts')
+     <script type="text/javascript">
+        $(function(){
+            var url = window.location;
+                $('ul.nav-sidebar a').filter(function() {
+                return this.href == url;
+            }).addClass('active');
+                $('ul.nav-treeview a').filter(function() {
+                return this.href == url;
+            }).parentsUntil(".nav-sidebar > .nav-treeview").addClass('menu-open') .prev('a').addClass('active');
+        });
+      </script>
+  @endpush

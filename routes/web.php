@@ -26,3 +26,5 @@ Route::get('admin/categories/{id}/show', 'CategoryController@show')->name('categ
 Route::get('admin/categories/{id}/edit', 'CategoryController@edit')->name('categories.edit');
 Route::put('admin/categories/{id}/update', 'CategoryController@update')->name('categories.update');
 Route::delete('admin/categories/{id}/destroy', 'CategoryController@destroy')->name('categories.destroy');
+
+Route::resource('products', 'ProductController');
