@@ -39,8 +39,8 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <button type="submit" class="btn btn-outline btn-primary" style="margin-top: 7.5%"><i class="fa fa-search"></i> Cari</button>
-                            <a href="{{ route('products.index') }}" class="btn btn-outline btn-secondary" style="margin-top: 7.5%"><i class="fas fa-sync"></i> Reload</a>
+                            <button type="submit" class="btn btn-outline btn-primary" style="margin-top: 6%"><i class="fa fa-search"></i> Cari</button>
+                            <a href="{{ route('products.index') }}" class="btn btn-outline btn-secondary" style="margin-top: 6%"><i class="fas fa-sync"></i> Reload</a>
                         </div>
                     </div>
                 {!! Form::close() !!}

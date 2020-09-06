@@ -26,7 +26,7 @@
                    </div>
                 </div>
                 <div class="card-footer">
-                    <a href="{{ route('transactions.index') }}" class="btn btn-secondary"><i class="fa fa-arrow-left"></i> Back</a>
+                    <a href="{{ route('transactions.index') }}" class="btn btn-outline-secondary"><i class="fa fa-arrow-left"></i> Back</a>
                     {!! Form::submit('Import Excel', ['class' => 'btn btn-primary float-right']) !!}
                 </div>
                 {!! Form::close() !!}

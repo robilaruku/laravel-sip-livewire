@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <body class="hold-transition login-page">
-<div class="login-box">
+<div class="login-box" style="margin-bottom: 10%">
   <div class="login-logo">
     <a href="#"><b>Sign</b>Here</a>
   </div>
@@ -39,6 +39,7 @@
             </button>
         </div>
         @endif
+        
         <div class="input-group mb-3">
           <input type="email" name="email" class="form-control" placeholder="Email">
           <div class="input-group-append">
