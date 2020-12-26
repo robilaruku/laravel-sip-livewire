@@ -23,11 +23,11 @@
                     <div class="row">
                         <div class="form-group col-sm-6">
                             {!! Form::label('category_id', 'Category') !!}
-                            {!! Form::select('category_id', $categories, null, ['class' => 'form-control', 'placeholder' => 'Choose Category']) !!}
+                            {!! Form::select('category_id', $categories, old('category_id'), ['class' => 'form-control', 'placeholder' => 'Choose Category']) !!}
                         </div>
                         <div class="form-group col-sm-6">
                             {!! Form::label('name', 'Name') !!}
-                            {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Name...']) !!}
+                            {!! Form::text('name', old('name'), ['class' => 'form-control', 'placeholder' => 'Name...']) !!}
                         </div>
                         <div class="form-group col-sm-6">
                             {!! Form::label('price', 'Price') !!}

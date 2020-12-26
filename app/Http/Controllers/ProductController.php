@@ -21,7 +21,7 @@ class ProductController extends Controller
         $category = $request->input('category');
         $search = $request->input('search');
 
-        $paginate = 3;
+        $paginate = 1;
 
         $products = new Product;
 
@@ -67,13 +67,13 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $rules = [
-            'category_id' => 'required',  
-            'name' => 'required',  
-            'sku' => 'required',  
-            'price' => 'required',  
-            'image' => 'required',  
-            'status' => 'required',  
-            'description' => 'required',  
+            'category_id' => 'required',
+            'name' => 'required',
+            'sku' => 'required',
+            'price' => 'required',
+            'image' => 'required',
+            'status' => 'required',
+            'description' => 'required',
         ];
 
         $messages = [
@@ -107,7 +107,7 @@ class ProductController extends Controller
 
             return redirect()->route('products.index');
         }
-        
+
     }
 
     /**
@@ -150,13 +150,13 @@ class ProductController extends Controller
     public function update(Request $request, $id)
     {
           $rules = [
-            'category_id' => 'required',  
-            'name' => 'required',  
-            'sku' => 'required',  
-            'price' => 'required',  
-            'image' => 'required',  
-            'status' => 'required',  
-            'description' => 'required',  
+            'category_id' => 'required',
+            'name' => 'required',
+            'sku' => 'required',
+            'price' => 'required',
+            'image' => 'required',
+            'status' => 'required',
+            'description' => 'required',
         ];
 
         $messages = [

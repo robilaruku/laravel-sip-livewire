@@ -23,7 +23,8 @@
                         </button>
                     </div>
                 @endif
-                <div class="table-responsive">
+                <livewire:categories.categories-table />
+                {{-- <div class="table-responsive">
                     <table class="table table-bordered table-hover table-striped">
                         <thead>
                             <tr>
@@ -58,7 +59,7 @@
                             @endforeach
                         </tbody>
                     </table>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>

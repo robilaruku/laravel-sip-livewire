@@ -10,7 +10,7 @@
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <div class="pb-3 mt-3 mb-3 user-panel d-flex">
         <div class="image">
           <img src="{{ asset('assets/dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2" alt="User Image">
         </div>
@@ -56,6 +56,23 @@
               </p>
             </a>
           </li>
+          <li class="nav-header">Management User</li>
+          <li class="nav-item">
+            <a href="{{ route('roles.index') }}" class="nav-link">
+            <i class="nav-icon fas fa-user-check"></i>
+            <p>
+              Role Permission 
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ route('users.index') }}" class="nav-link">
+          <i class="nav-icon fas fa-users"></i>
+          <p>
+            Users
+          </p>
+        </a>
+      </li>
           <li class="nav-header">Sign Out</li>
           <li class="nav-item">
               <a href="{{ route('logout') }}" class="nav-link">
